@@ -1,0 +1,99 @@
+/*
+===============
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/*
+===============
+Variables
+===============
+*/
+:root {
+    --textColor: #5B5B5B;
+    --accent: #7B61FF;
+
+    --font-main: 'Poppins', sans-serif;
+}
+/*
+===============
+Global Styles
+===============
+*/
+body{
+    font-family: var(--font-main);
+    color: var(--textColor);
+}
+a{
+    color: inherit;
+}
+.container{
+    max-width: 1346px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header {
+}
+.nav {
+}
+.logo {
+}
+.nav__list {
+}
+.nav__list-item {
+}
+.nav__list-link {
+}
+.nav__list-link--active {
+}
+.user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.user__content {
+}
+.user__greeting {
+    opacity: 0.5;
+}
+.user__name {
+}
+.user__avatar {
+}
+.user__img {
+}
+.header__content {
+    flex-direction: column;
+    row-gap: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.header__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 62px;
+}
+.button {
+    background: var(--accent);
+    border-radius: 12px;
+    color: #fff;
+
+    transition: background-color 0.2s ease-in;
+}
+.button:hover {
+	background-color: #6344ff;
+}
+.button--huge {
+    padding: 24px;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+/*
+===============
+Popular Section
+===============
+*/
