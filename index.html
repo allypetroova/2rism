@@ -57,13 +57,43 @@
         <h1 class="header__title">
           Discover the most engaging places
         </h1>
-        <button class="button button--huge" href="#">
+        <button class="button button--huge">
           <img src="./images/icons/global.svg" alt="">
           Discover on 3D Globe
         </button>
       </div>
 
       <form action="" class="form">
+        <div class="form__input-wrapper form__input--location">
+          <label class="form__label" for="location">Location</label>
+          <input class="form__input" type="text" id="location" placeholder="Explore nearby destinations">
+        </div>
+
+        <div class="form__input-wrapper form__input--activity">
+          <label class="form__label" for="activity">Activity</label>
+          <select class="form__select" name="activity" id="activity">
+            <option value="all">All Activities</option>
+            <option value="culture">Culture</option>
+            <option value="sport">Sport</option>
+            <option value="extreme">Extreme</option>
+          </select>
+        </div>
+
+        <div class="form__input-wrapper form__input--date">
+          <label class="form__label" for="date">When</label>
+          <input class="form__input" type="date" id="date" placeholder="Choose a Date">
+        </div>
+
+        <div class="form__input-wrapper form__input--guests">
+          <label class="form__label" for="guests">Guests</label>
+          <select class="form__select" name="guests" id="guests">
+            <option value="">1 guest</option>
+            <option value="">2 guest</option>
+            <option value="">3 guest</option>
+            <option value="">4 guest or more</option>
+          </select>
+        </div>
+
         <button class="button button--search">
           <img class="" src="images/icons/search.svg" alt="Search">
         </button>
@@ -78,10 +108,68 @@
         <div class="section__header">
           <h2 class="title-1">Hotels and Restaurants</h2>
         </div>
+
+        <div class="section__cards section__cards--popular">
+          
+          <article class="card">
+            <a class="card__link" href="#"></a>
+            <img class="card__img" src="images/popular-1.jpg" alt="Image">
+            <h3 class="card__title">Big Sur</h3>
+            <a class="card__location" href="#california">California, USA</a> 
+          </article>
+
+          <article class="card">
+            <a class="card__link" href="#"></a>
+            <img class="card__img" src="images/popular-2.jpg" alt="Image">
+            <h3 class="card__title">Prescott</h3>
+            <a class="card__location" href="#arizona">Arizona, USA</a> 
+          </article>
+
+          <article class="card">
+            <a class="card__link" href="#"></a>
+            <img class="card__img" src="images/popular-3.jpg" alt="Image">
+            <h3 class="card__title">Fort Mayers</h3>
+            <a class="card__location" href="#florida">Florida, USA</a> 
+          </article>
+
+          <article class="card">
+            <a class="card__link" href="#"></a>
+            <img class="card__img" src="images/popular-4.jpg" alt="Image">
+            <h3 class="card__title">Tucson</h3>
+            <a class="card__location" href="#arizona">Arizona, USA</a> 
+          </article>
+
+          <article class="card">
+            <a class="card__link" href="#"></a>
+            <img class="card__img" src="images/popular-5.jpg" alt="Image">
+            <h3 class="card__title">St. Joseph</h3>
+            <a class="card__location" href="#michigan">Michigan, USA</a> 
+          </article>
+
+          <article class="card">
+            <a class="card__link" href="#"></a>
+            <img class="card__img" src="images/popular-6.jpg" alt="Image">
+            <h3 class="card__title">Madrid</h3>
+            <a class="card__location" href="#spain">Spain</a> 
+          </article>
+
+        </div>
       </div>
-      <div class="section__cards section__cards--popular"></div>
+      
     </section>
     <!-- Hotel -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="title-1">Hotels and Restaurants</h2>
+          <a class="button-more" href="#">
+            View all
+            <img src="images/icons/arrow-more.svg" alt="arrow">
+          </a>
+        </div>
+
+      </div>
+    </section>
   </main>
   
 

@@ -12,10 +12,11 @@ Variables
 :root {
     --text-сolor: #5B5B5B;
     --title-сolor: #161414;
-    --text-muted: #878787;
+    --text-muted: #979797;
     --accent: #7B61FF;
     
     --header-сolor: #FFFFFF;
+    --text-article: #878787;
 
     --ui-light-purple: #F6F4FF;
     --ui-btn-hover: #6344ff;
@@ -158,9 +159,46 @@ body{
     height: 88px;
     padding: 8px;
 
-    color: #000;
+    color: var(--title-сolor);
     background-color: var(--header-сolor);
     border-radius: 12px;
+}
+.form__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 16px 56px;
+
+    background-repeat: no-repeat;
+    background-position: 16px 24px;
+}
+.form__input--location {
+    width: 300px;
+    background-image: url("../images/icons/location.svg");
+}
+.form__input--activity {
+    width: 255px;
+    background-image: url("../images/icons/activity.svg");
+}
+.form__input--date {
+    width: 255px;
+    background-image: url("../images/icons/date.svg");
+}
+.form__input--guests {
+    width: 255px;
+    background-image: url("../images/icons/guests.svg");
+}
+.form__label {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-сolor);
+}
+.form__input {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--title-сolor);
+}
+.form__input::placeholder {
+    color: var(--title-сolor);
 }
 .button--search {
     width: 60px;
@@ -172,3 +210,73 @@ body{
 Popular Section
 ===============
 */
+.main {
+    padding: 120px 0;
+    display: grid;
+    gap: 120px;
+}
+.section__header {
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--title-сolor);
+}
+.section__cards {
+    display: grid;
+    column-gap: 32px;
+}
+.section__cards--popular {
+    grid-template-columns: repeat(6, 1fr);
+}
+.card {
+    position: relative;
+}
+.card__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.card__img {
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+.card__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--title-сolor);
+}
+.card__location {
+    position: relative;
+    z-index: 1;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+/*
+===============
+Hotel Section
+===============
+*/
+.button-more{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    padding: 10px;
+    height: 44px;
+    background-color: var(--ui-light-purple);
+    border-radius: 12px;
+    font-size: 16px;
+    color: var(--accent);
+
+    transition: background-color 0.2s ease-in;
+    &:hover{
+        background-color: #dcd8f1;
+    }
+}
