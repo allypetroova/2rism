@@ -280,3 +280,38 @@ Hotel Section
         background-color: #dcd8f1;
     }
 }
+.section__cards--4-in-row {
+    display: grid;
+    grid-template-columns: repeat(4, 320px);
+    gap: 32px;
+}
+.card__img--hotel {
+    margin-bottom: 10px;
+}
+.card__title--hotel {
+    margin-bottom: 12px;
+}
+.card__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__location--icon {
+    padding-left: 20px;
+    background: url(../images/icons/location.png);
+    background-position: 0px 1px;
+    background-repeat: no-repeat;
+}
+.card__stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+/*
+===============
+Activities Section
+===============
+*/
+.card__img--activities {
+    margin-bottom: 16px;
+}
