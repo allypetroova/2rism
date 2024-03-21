@@ -281,9 +281,7 @@ Hotel Section
     }
 }
 .section__cards--4-in-row {
-    display: grid;
     grid-template-columns: repeat(4, 320px);
-    gap: 32px;
 }
 .card__img--hotel {
     margin-bottom: 10px;
@@ -314,4 +312,17 @@ Activities Section
 */
 .card__img--activities {
     margin-bottom: 16px;
+}
+/*
+===============
+Tips Section
+===============
+*/
+.section__cards--2-in-row {
+    grid-template-columns: repeat(2, 672px);
+}
+.card--wide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
 }
