@@ -293,6 +293,7 @@ Hotel Section
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 24px;
 }
 .card__location--icon {
     padding-left: 20px;
@@ -326,3 +327,85 @@ Tips Section
     grid-template-columns: 1fr 1fr;
     gap: 32px;
 }
+.card__title--big{
+    color: var(--title-сolor);
+    font-weight: 600;
+    font-size: 20px;
+}
+.card__text{
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--text-сolor);
+}
+.card__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 16px;
+}
+.card__bottom--wide{
+    margin-top: auto;
+}
+.card__bottom-link{
+    position: relative;
+    z-index: 1;
+    font-size: 12px;
+    color: var(--text-article);
+
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+}
+.card__bottom-link:hover {
+    color: var(--ui-btn-hover);
+}
+.card__bottom-link--date {
+    background-image: url('../images/icons/calendar-gray.svg');
+}
+
+.card__bottom-link--author {
+    background-image: url('../images/icons/user.svg');
+}
+
+.card__bottom-link--comments {
+    background-image: url('../images/icons/comment.svg');
+}
+/*
+===============
+About us Section
+===============
+*/
+.about-us {
+    margin: 0 auto;
+    max-width: 1144px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.about-us__desc {
+    display: grid;
+    gap: 32px;
+    align-content: center;
+}
+.about-us__title {
+    font-size: 32px;
+    font-weight: 600;
+}
+.about-us__text {
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--text-сolor);
+}
+.about-us__btn {
+    justify-self: flex-start;
+}
+.about-us__img {
+    border-radius: 24px;
+    height: 100%;
+    object-fit: cover;
+}
+/*
+===============
+Footer
+===============
+*/
