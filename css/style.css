@@ -21,6 +21,8 @@ Variables
     --ui-light-purple: #F6F4FF;
     --ui-btn-hover: #6344ff;
 
+    --footer-сolor: #F9F9F9;
+
     --font-main: 'Poppins', sans-serif;
 }
 /*
@@ -409,3 +411,90 @@ About us Section
 Footer
 ===============
 */
+.footer {
+    padding: 120px 0;
+    background-color: var(--footer-сolor);
+}
+.footer__row {
+    display: grid;
+    gap: 64px;
+    grid-template-columns: repeat(3, auto);
+}
+.footer__contacts {
+}
+.footer__logo {
+    margin-bottom: 16px;
+}
+.footer__text {
+    margin-bottom: 32px;
+    font-size: 13px;
+    color: var(--text-сolor);
+}
+.footer__socials {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.footer__socials-item {
+}
+.footer__socials-link {
+}
+.footer__nav-wrapper {
+    display: flex;
+    gap: 64px;
+}
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__nav-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--title-сolor);
+}
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer__nav-item {
+}
+.footer__nav-link {
+    font-size: 13px;
+    color: var(--text-сolor);
+}
+.footer__subscribe {
+    max-width: 388px;
+}
+.footer__subscribe-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* subscribe */
+
+.subscribe {
+    display: flex;
+    gap: 16px;
+}
+.subscribe__input-wrapper {
+}
+.subscribe__input {
+    padding: 16px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+.subscribe__label {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 300;
+    color: var(--text-сolor);
+}
+.subscribe__btn-wrapper {
+}
+.button--subscribe {
+    padding: 24px;
+}
