@@ -1,9 +1,12 @@
 /*
 ===============
-Fonts
+Fonts and styles
 ===============
 */
+@import "reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import "nav-icon.css";
+@import "mobile-nav.css";
 /*
 ===============
 Variables

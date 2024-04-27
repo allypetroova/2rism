@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>2rism</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.min.css">
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <link rel="stylesheet" href="./libs/autoComplete/css/autoComplete.01.css">
+  <link rel="stylesheet" href="./libs/custom-select/custom-select.css">
 </head>
 <body>
   <header class="header">
@@ -16,6 +18,7 @@
         <a class="logo" href="#">
           <img src="images/logo.svg" alt="2Rism">
         </a>
+
         <ul class="nav__list">
           <li class="nav__list-item">
             <a class="nav__list-link nav__list-link--active" href="#">home</a>
@@ -39,19 +42,24 @@
             <a class="nav__list-link" href="#">contact</a>
           </li>
         </ul>
-        <div class="user">
-          <div class="user__content">
-            <span class="user__greeting">Holla,</span>
-            <span class="user__name">Ales Nesetril</span>
-          </div>
-          <div class="user__avatar">
-            <img class="user__img" src="images/user.jpg" alt="Avatar">
+
+        <div class="nav__user">
+          <div class="user">
+            <div class="user__content">
+              <span class="user__greeting">Holla,</span>
+              <span class="user__name">Ales Nesetril</span>
+            </div>
+            <div class="user__avatar">
+              <img class="user__img" src="images/user.jpg" alt="Avatar">
+            </div>
           </div>
         </div>
+
         <button class="mobile-nav-btn">
           <div class="nav-icon"></div>
         </button>
       </nav>
+
       <div class="header__content">
         <h1 class="header__title">
           Discover the most engaging places
@@ -61,10 +69,11 @@
           Discover on 3D Globe
         </button>
       </div>
+
       <form action="" class="form">
         <div class="form__input-wrapper form__input--location">
           <label class="form__label" for="location">Location</label>
-          <input class="form__input" type="text" id="location" placeholder="Explore nearby destinations">
+          <input autocomplete="off" class="form__input" type="text" id="location" placeholder="Explore nearby destinations">
         </div>
         <div class="form__input-wrapper form__input--activity">
           <label class="form__label" for="activity">Activity</label>
@@ -77,7 +86,7 @@
         </div>
         <div class="form__input-wrapper form__input--date">
           <label class="form__label" for="date">When</label>
-          <input class="form__input" type="date" id="date" placeholder="Choose a Date">
+          <input class="form__input" type="text" id="date" placeholder="Choose a Date">
         </div>
         <div class="form__input-wrapper form__input--guests">
           <label class="form__label" for="guests">Guests</label>
@@ -114,7 +123,7 @@
     <section class="section">
       <div class="container">
         <div class="section__header">
-          <h2 class="title-1">Hotels and Restaurants</h2>
+          <h2 class="title-1">Popular Destinations</h2>
         </div>
         <div class="section__cards section__cards--popular">
           
@@ -442,7 +451,12 @@
     </div>
   </footer>
 
+  <script src="./libs/autoComplete/autoComplete.min.js"></script>
+  <script src="./libs/custom-select/custom-select.min.js"></script>
+  <script src="./libs/easepick/easepick.min.js"></script>
+
+  <script src="js/input-dest.js"></script>
+  <script src="./js/mobile-nav.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
 </body>
 </html>
