@@ -64,7 +64,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 30px;
+    gap: 30px;
 }
 .logo {
     flex-shrink: 0;
@@ -147,7 +147,7 @@ body{
 .button--huge {
     padding: 24px;
     display: flex;
-    column-gap: 8px;
+    gap: 8px;
     align-items: center;
     font-size: 18px;
     font-weight: 600;
@@ -233,7 +233,7 @@ Popular Section
 }
 .section__cards {
     display: grid;
-    column-gap: 32px;
+    gap: 32px;
 }
 .section__cards--popular {
     grid-template-columns: repeat(6, 1fr);
@@ -299,7 +299,7 @@ Hotel Section
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 24px;
+    gap: 24px;
 }
 .card__location--icon {
     padding-left: 20px;
